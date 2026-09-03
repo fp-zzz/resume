@@ -1,16 +1,23 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Francisco Pruneda — Resume</title>
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Francisco Pruneda — Resume</title>
   <style>
-    body { margin: 0; height: 100vh; display: flex; flex-direction: column; align-items: center; font-family: sans-serif; background: #121212; color: #eee; }
-    iframe { width: 90%; flex: 1; border: none; }
-    a { color: #a78bfa; margin: 1rem; }
+    body { margin: 0; min-height: 100vh; display: flex; align-items: center; justify-content: center; font-family: sans-serif; background: #121212; color: #eee; }
+    .card { text-align: center; padding: 2rem; }
+    h1 { margin-bottom: 0.5rem; }
+    p { color: #aaa; margin-bottom: 1.5rem; }
+    a { display: inline-block; padding: 0.75rem 2rem; background: #a78bfa; color: #000; text-decoration: none; border-radius: 6px; }
+    a:hover { background: #8b70d4; }
   </style>
 </head>
 <body>
-  <a href="Resume.pdf" download>Download PDF</a>
-  <iframe src="resume.pdf"></iframe>
+  <div class="card">
+    <h1>Francisco Pruneda</h1>
+    <p>Electrical Engineering @ Texas Tech University</p>
+    <a href="resume.pdf" target="_blank">View & Download Resume</a>
+  </div>
 </body>
 </html>
